@@ -59,13 +59,92 @@ h2{
     margin: 0;
 }
 
+section h1{
+    font-size: 55px; 
+}
+
 .art {
      display: inline-block;
      width: 50%;
-     height: 50%; 
      float: left;
+     text-align: center;
+     margin-top: 0px;
+}
+.art figure{
+    margin: 0;
 }
 .art img{
     width: 50%;
-    height: 50%;
+   
 }
+.art article{
+    font-size: 25px;
+    margin: 0 auto;
+    text-align: left;
+}
+h3{clear: both;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+}
+section p{
+    text-align: center;
+    font-size: 15px;
+}
+
+p{
+    font-size: 20px;    
+}
+#icon{
+    text-align: center;
+}
+
+#icon figure{
+    display: inline-block;
+}
+figcaption{
+    font-size: 15px;
+    text-align: center;
+}
+#portfolio-container{
+padding: 30px;
+    
+}
+#portfolio #portfolio-container .floated{
+    width: 33.33333%;
+    float: left;
+    height: 350px;
+    background-size: cover;
+    position: relative;
+
+}
+#portfolio #portfolio-container .floated .item-mask{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(42, 61, 79, 0.8);
+    opacity: 0;
+    transition: all .5s ease-in-out; 
+   
+}
+
+#portfolio #portfolio-container .floated .item-mask:hover{
+    opacity: 1;
+    }
+
+
+#item-1{
+    background-image: url(../img/portfolio1.jpg);
+   
+}
+#item-2{
+    background-image: url(../img/portfolio2.jpg);
+  
+}
+#item-3{
+    background-image: url(../img/portfolio4.jpg);
+  
+}
+
