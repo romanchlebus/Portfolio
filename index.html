@@ -3,36 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width">
 <!--    font awsome-->
    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 <!--   Moje Style-->
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="Css/style.css">
+   <link rel="stylesheet" href="Css/responsivestyle.css">
 <!--  czcionki google.font -->
    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet"> 
 </head>
+
+
 <body>
+
 <nav id="Omnie">
+    <label for="drop" class="toggle">Menu</label>
+    <input type="checkbox" id="drop">
     <ul id="list">
-        <li><a class="linknav" href="">o mnie</a></li>
-        <li><a class="linknav" href="">umiejętności</a></li>
-        <li><a class="linknav" href="">portfolio</a></li>
-        <li><a class="linknav" href="">kontakt</a></li>
+        <li><a class="linknav" href=#omnie>o mnie</a></li>
+        <li><a class="linknav" href="#umiejetnosci">umiejętności</a></li>
+        <li><a class="linknav" href=#portfolio>portfolio</a></li>
+        <li><a class="linknav" href="#kontakt">kontakt</a></li>
     </ul>
 </nav>
+
 <header>
     <div id="center">
         <h1>Roman <span>Chlebuś</span></h1>
         <h2>Frond-End Developer</h2>
     </div>
-</header>    
+</header> 
+   
 <section id= "about">
-    <h1>O mnie</h1>
+    <h1 id="omnie">O mnie</h1>
     <div class="art">
-        <figure><img src="../Portfolio/img/jan-nowak.jpg" alt="Moje zdjecie"></figure>
+        <figure>
+            <img src="../Portfolio/img/jan-nowak.jpg" alt="Moje zdjecie">
+        </figure>
     </div>
-    <div class="art">
-          <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero blanditiis quia rem sequi ipsam est eveniet quisquam, porro delectus, velit accusantium vitae at voluptas sit, officiis culpa dolore. Aliquam, officiis? ipsum dolor sit amet, consectetur adipisicing elit. Provident esse eligendi, dolore quia repellendus, illum id magnam cum quas officiis vel saepe sapiente possimus nesciunt consequatur deserunt, veniam porro, ex. ipsum dolor sit amet, consectetur adipisicing elit. Libero et, amet rerum, optio magnam soluta eligendi temporibus voluptas tenetur aliquam error eius totam incidunt in, dolore tempora animi dolores sed!</article>
-    </div>  
+    <article class="art">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero blanditiis quia rem sequi ipsam est eveniet quisquam, porro delectus, velit accusantium vitae at voluptas sit, officiis culpa dolore. Aliquam, officiis? ipsum dolor sit amet, consectetur adipisicing elit. Provident esse eligendi, dolore quia repellendus, illum id magnam cum quas officiis vel saepe sapiente possimus nesciunt consequatur deserunt, veniam porro, ex. ipsum dolor sit amet, consectetur adipisicing elit. Libero et, amet rerum, optio magnam soluta eligendi temporibus voluptas tenetur aliquam error eius totam incidunt in, dolore tempora animi dolores sed!</p>
+    </article>  
 </section> 
 <section id="umiejetnosci">   
     <h3>Moje <span>umiejętności</span> </h3> 
@@ -68,7 +79,7 @@
                 <h6>Lorem ipsum</h6>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ratione amet tempora dolores tempore</p>
                 <p>Wykorzystane technologie:<br>HTML, CSS3, RWD, BootStrap, JavaScript, JQuery</p>  
-                <i class="fa fa-link" aria-hidden="true"></i>
+                 <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                </div>
             </div>    
         </div>    
@@ -78,7 +89,7 @@
                <h6>Lorem ipsum</h6>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ratione amet tempora dolores tempore</p>
                 <p>Wykorzystane technologie:<br>HTML, CSS3, RWD, BootStrap, JavaScript, JQuery</p>
-                <i class="fa fa-link" aria-hidden="true"></i>
+                 <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
               </div>
             </div>
         </div>  
@@ -88,7 +99,7 @@
                 <h6>Lorem ipsum</h6>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ratione amet tempora dolores tempore</p>
                 <p>Wykorzystane technologie:<br>HTML, CSS3, RWD, BootStrap, JavaScript, JQuery</p>
-                <i class="fa fa-link" aria-hidden="true"></i>
+                   <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                </div>
             </div>
         </div>        
@@ -97,28 +108,41 @@
     </div>
 </section>
     
+<section id="kontakt">
+   
+    <div id="social">
+      <h3>Roman <span>Chlebuś</span></h3>
+      <p>ul. Bura 6/13<br>66-666 Szarów</p>
+      <address id="labelmargin">tel: 666 66 66 66
+      <br>email:  <a id="mojlink" href="">r.chlebus@wp.pl</a></address>
+       <div id=respozycja>
+          <a href=""><i class="fa fa-facebook-official fa-2x"></i></a> 
+          <a href=""><i class="fa fa-google-plus-official fa-2x" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+    </div>
+    </div>
+    
+    <div id="formulasz"> 
+      <form action="https://formspree.io/orlik313@gmail.com" method="POST"> 
+                  <!--Imie Nazwisko -->
+        <input id="user-name" name="Imię" type="text" value="Imię i nazwisko">
+                    <!--Email-->
+        <input id="user-email" name="Mail" type ="email" value="E-mail">
+                      <!-- Wiadomość  -->
+        <textarea id="user-messege" maxlength="200" name="Wiadomosc">Treść wiadomości</textarea>
+                        <!-- Wyślij  -->
+        <input id="wyslij" type="submit" value="WYŚLIJ">
+                          
+        <div class="clear"></div>
+      </form>
+    </div>  
+</section>
+
+                           <!--encja-->
 <footer>
-  <form action="https://formspree.io/orlik313@gmail.com" method="POST"> 
-    <h3>Roman <span>Chlebuś</span></h3>
-    <p>ul. Bura 6/13</p>
-    <p>66-666 Szarów</p>
-    <label id="labelmargin">tel: 666 66 66 66</label>
-    <label>email:  <a id="mojlink" href="">r.chlebus@wp.pl</a></label>
-    <a href=""><i class="fa fa-facebook-official fa-2x"></i></a> 
-    <a href=""><i class="fa fa-google-plus-official fa-2x" aria-hidden="true"></i></a>
-    <a href=""><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
-    <a href=""><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-              <!--Imie Nazwisko -->
-    <input id="user-name" name="Imię" type="text" value="Imię i nazwisko">
-                <!--Email-->
-    <input id="user-email" name="Mail" type ="email" value="E-mail">
-                  <!-- Wiadomość  -->
-    <textarea id="user-messege" maxlength="200" name="Wiadomosc">Treść wiadomości</textarea>
-                    <!-- Wyślij  -->
-    <input id="wyslij" type="submit" value="WYŚLIJ">
-                      <!--encja-->
     <span id="encja"><p>Copyright&copy;Roman Chlebuś</p></span>
-   </form>
+ 
 </footer>
     
     

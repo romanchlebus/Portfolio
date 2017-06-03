@@ -1,0 +1,131 @@
+@media all and (min-width: 768px) and (max-width: 1200px){
+   
+    
+   
+#portfolio #portfolio-container .floated{
+    width: 50%;
+}
+    
+    #portfolio #portfolio-container .floated:last-child{
+   
+        width: 100%;
+        bottom: 105px;
+        margin: 0;
+    }
+  
+}
+
+@media all and (max-width: 768px){
+    
+     #Omnie .toggle {
+        display: block;
+        background-color: #fff;
+        padding: 0 20px;
+        color: green;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        text-align: right;
+    }
+    
+    #Omnie ul {
+        display: none;
+    }
+    
+    #Omnie #drop:checked + ul {
+        display: block;
+    }
+
+    #Omnie > ul > li {
+        display: inline;
+        width: 90%;
+        padding: 20px;
+        text-align: right;  
+    }
+header{
+    width: 100%;
+}
+    #encja{
+        position: relative;
+    }
+h1{
+    font-size: 10vw;
+}
+    h2{
+    font-size: 4vw;
+}
+    #about{
+    
+    height: 170vw;
+}
+    #about>h1{
+    
+    font-size: 5vw;
+}
+    .art {
+     
+     width: 100%;
+}
+    .art img{
+    width: 80%;
+   
+    }
+    .art p{
+    font-size: 3vw;
+    margin: 10px 30px;
+    }
+    #portfolio #portfolio-container .floated{
+    width: 100%;
+}
+     #portfolio #portfolio-container .floated:first-child{
+   
+        width: 100%;
+        margin: 0;
+    }
+    #portfolio #portfolio-container .floated:last-child{
+   
+        width: 100%;
+        bottom: 105px;
+        margin: 0;
+    }
+    #social{
+    width: 100%;
+}
+    #kontakt {
+   height: 455px;
+}
+   #formulasz{
+    width: 100%;
+}
+    #kontakt h3{
+        font-size: 5vw;
+    text-align: center;
+}
+    h3 > span{
+        font-size: 5vw;
+    }
+#kontakt p{
+   
+    text-align: center;
+    font-size: 2vw;
+}
+    #labelmargin{
+        text-align: center;
+        font-size: 2vw;
+        margin-top: 0;
+    }
+    #social i{
+        font-size: 5vw;
+        padding: 0;
+        margin-top: 30px;  
+    }
+    #respozycja{
+        text-align: center;
+    }
+    
+    form{
+        margin-top: 40px;
+    }
+}
+
