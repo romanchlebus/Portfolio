@@ -22,15 +22,17 @@
         background-color: #fff;
         padding: 0 20px;
         color: green;
-        font-size: 20px;
+        font-size: 4vw;
         line-height: 60px;
         text-decoration: none;
         border: none;
-        text-align: right;
+        text-align: center;
+        cursor: pointer;
     }
     
     #Omnie ul {
         display: none;
+        background-color: plum;
     }
     
     #Omnie #drop:checked + ul {
@@ -38,11 +40,22 @@
     }
 
     #Omnie > ul > li {
-        display: inline;
-        width: 90%;
-        padding: 20px;
-        text-align: right;  
+        display: block;
+        width: 50%;
+        padding: 5px;
+        text-align: left; 
+        font-size: 2.5vw;
+        line-height: 3;
+       
     }
+    #Omnie{
+        width: 20%;
+       
+    }
+    #list{
+        margin: 0;
+    }
+    
 header{
     width: 100%;
 }
@@ -105,7 +118,7 @@ h1{
     h3 > span{
         font-size: 5vw;
     }
-#kontakt p{
+    #kontakt p{
    
     text-align: center;
     font-size: 2vw;
